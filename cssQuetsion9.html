@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout Example</title>
+  <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: calc(100% - 50px); /* Adjust height as needed */
+      }
+      
+      .left-section
+      {
+        padding: 5px;
+        border-color: #333;
+        border: 2px;
+      }
+    
+      .right-section {
+        padding: 30px;
+      }
+      
+      .right-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .navbar {
+        background-color: yellowgreen;
+        height: 50px;
+        padding: 10px;
+      }
+      
+      .navbar nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .navbar nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      
+      .navbar nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      /* Add additional styling as needed */
+      
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="grid-container">
+    <section class="left-section">
+      <p style="padding: 10px " >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi id delectus quibusdam nisi inventore, laborum voluptatum distinctio corrupti qui doloremque. Esse, non quidem odit temporibus impedit modi numquam incidunt maxime molestiae totam dicta nobis dignissimos nisi, facilis illo veritatis. Nihil quae quis, cumque minus repudiandae expedita fuga voluptatem dolorem autem vel porro. Quod, molestias a. Iusto aliquid iste laborum rem quibusdam veritatis assumenda doloribus facere corrupti fugiat doloremque possimus laudantium, inventore id qui nobis, minima eaque. Architecto, nobis tenetur soluta dignissimos ipsam dolorem reprehenderit repellendus quis perferendis voluptas veritatis suscipit ducimus fugiat eius necessitatibus. Fuga impedit ipsa tempore quia molestiae.
+      </p>
+    </section>
+    <section class="right-section">
+      <!-- Right section content here -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam et commodi, nulla nostrum aperiam repellat dolores consectetur. Saepe, reiciendis delectus. Assumenda numquam eveniet neque repellendus ullam ipsum ipsam in quibusdam aspernatur, harum nihil et consectetur placeat voluptatibus corrupti magni unde necessitatibus possimus eum molestias voluptas. Vero sunt qui velit. Natus autem blanditiis neque accusantium dolores eum consectetur eveniet quia at fugit corrupti, fugiat quibusdam ratione! Nesciunt itaque sunt iusto sit! Velit praesentium numquam incidunt facere dicta adipisci illo quo ducimus repudiandae corrupti accusantium possimus atque, officiis quasi. Ex adipisci magnam totam suscipit fuga nesciunt doloremque deleniti aliquam incidunt quisquam?
+      </p>
+      <div class="image-container">
+        <img src="https://th.bing.com/th/id/OIP.JBmbVP-ehkK6S7yyEzfWUwHaF7?w=204&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Image 1" width="150px" height="200px">
+        <img src="https://th.bing.com/th/id/OIP.pjUVlRss5qwdVDBu15F11wHaE9?w=289&h=193&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Image 2" width="150px" height="200px">
+        <img src="https://th.bing.com/th/id/OIP.-AdA8o4TPHzbMbCasz_t9wHaEo?w=277&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Image 3"  width="150px" height="200px">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
